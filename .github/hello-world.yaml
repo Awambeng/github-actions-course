@@ -1,0 +1,18 @@
+# Defining the name of our workflow
+name: Hello World
+
+# Defining the trigger for our workflow
+on:
+  workflow_dispatch: 
+
+# Jobs that will be executed when the workflow is triggered
+jobs:
+  # Name of the job
+  print-hello-world:
+    # Defining the run time for the job
+    runs-on: ubuntu-latest
+
+    # Setting what is going to run 
+    steps: 
+      - name: Say hello
+        run: echo "Hello World"
