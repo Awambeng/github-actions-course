@@ -25,7 +25,7 @@ jobs:
 
       # Install yarn
       - name: Install Yarn
-        run: yarn install --global yarn
+        run: npm install --global yarn
 
       # Install libraries
       - name: Install dependencies
